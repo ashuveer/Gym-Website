@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nehul Fitness</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+  <style media="screen">
+    /* CSS Reset */
+    body {
+      font-family: 'Baloo Bhaina 2', cursive;
+      margin: 0px;
+      padding: 0px;
+      background: url("img/1000.jpg");
+      color: white;
+    }
+
+    .left {
+      /* border: 2px solid red; */
+      display: inline-block;
+      position: absolute;
+      left: 34px;
+      top: 20px;
+    }
+
+    .left img {
+      width: 84px;
+      filter: invert(100%);
+    }
+
+    .left div {
+      text-align: center;
+    }
+
+    .mid {
+      /* border: 2px solid green; */
+      display: block;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    .right {
+      position: absolute;
+      right: 26px;
+      top: 33px;
+      /* border: 2px solid yellow; */
+      display: inline-block;
+    }
+
+    .navbar {
+      display: inline-block;
+
+    }
+
+    .navbar li {
+      display: inline-block;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 34px 23px;
+      font-size: 18px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: gray;
+    }
+
+    .btn {
+      font-family: 'Baloo Bhaina 2', cursive;
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      padding: 0px 14px;
+      border: 2px solid gray;
+      border-radius: 14px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: darkgray;
+      color: red;
+    }
+
+    .container {
+      border: 2px solid white;
+      margin: 111px 100px;
+      padding: 7px 69px;
+      width: 48%;
+      border-radius: 25px;
+      text-align: center;
+    }
+
+    .form-group input {
+      font-family: 'Baloo Bhaina 2', cursive;
+      text-align: center;
+      display: block;
+      width: 60%;
+      border-radius: 10px;
+      padding: 1px;
+      border: 2px solid yellow;
+      margin: -9px auto;
+      font-size: 15px;
+    }
+
+    .container button {
+      display: block;
+      margin: 35px auto;
+      width: 58%;
+      text-align: center;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <!-- left box for logo -->
+    <div class="left">
+      <img src="img/gym.jpg" alt="">
+      <div class="">Nehul Fitness
+
+      </div>
+    </div>
+
+    <!-- mid box for navbar -->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" target="_blank" class="active">Home</a> </li>
+        <li><a href="#" target="_blank">About Us</a> </li>
+        <li><a href="#" target="_blank">Fitness Calculator</a> </li>
+        <li><a href="#" target="_blank">Content Us</a> </li>
+
+      </ul>
+    </div>
+
+    <!-- right box for buttons -->
+    <div class="right">
+      <button type="button" name="button" class="btn">Call Us Now</button>
+      <button type="button" class="btn" name="button">Email Us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1>Join the best gym now</h1>
+    <form action="noaction.php" method="post">
+      <div class="form-group">
+        <input type="text" name="" value="" placeholder="Enter your Name"><br>
+        <input type="number" name="" value="" placeholder="Enter your Age"><br>
+        <input type="text" name="" value="" placeholder="Enter your Locality"><br>
+        <input type="email" name="" value="" placeholder="Enter your Email ID">
+      </div>
+      <button type="button" class="btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
